@@ -14,6 +14,10 @@ Illustrate how sequences of cells in a matrix become square and irregular cluste
 [colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
 [github](notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
 
+Illustrate with animation of 8x8 grid, linear and Hilbert mapping as an image sampling algorithm
+
+[github](Hilbert_Animation.md)
+
 ## Using Hilbert curve in simple deep learning task with MNIST digits
 
 Simple deep learning experiment demonstrating how Hilbert rearrangement can assist in doing image processing.
