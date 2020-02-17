@@ -16,17 +16,28 @@ The training is done with three image sets: training, validation, and test. Trai
 
 ![detailed training](images/lstm_mse_final_2_flyback_extra.png)
 
-How to read this: *loss*, *accuracy*, *val_loss*, *val_accuracy* should be familiar. *test_accuracy* is the accuracy made on the best version of the model against the second holdout 'test' dataset. The horizontal and vertical dashed lines are the final measure of the model: the vertical line as at the lowest value of validation loss, and the horizontal line is the accuracy of the test data. Look at the distance between the red val_accuracy line and the dashed test_accuracy line- this is the measure of how bad the model is. 'delta' is the vertical distance between these two lines at the nadir of the validation loss. 
+How to read this: *loss*, *accuracy*, *val_loss*, *val_accuracy* should be familiar. *test_accuracy* is the accuracy made on the best version of the model against the second holdout 'test' dataset. The horizontal and vertical dashed lines are the final measure of the model: the vertical line as at the lowest value of validation loss, and the horizontal line is the accuracy value for the test data. Look at the distance between the red val_accuracy line and the dashed test_accuracy line- this is the measure of how bad the model is. 'delta' is the vertical distance between these two lines at the nadir of the validation loss. 
 
-In a good model, this delta should be very small- the validation accuracy and test accuracy should be very very close. In this chart, the delta is huge because this model is terrible! The job of the LSTMs is to retain a running summary of the pixels recently fed into it, in order to auto encode each pixel. An LSTM with only one hidden neuron of internal state cannot retain much information about the recent pixels.
+In a good model, this delta should be very small- the validation accuracy and test accuracy should be very very close. In this chart, the delta is huge because this model is terrible! The job of the LSTMs is to retain a running summary of the pixels recently fed into it, in order to auto encode each pixel. An LSTM with only two hidden neurons of internal state cannot retain much information about the recent pixels.
 
 ## Experiments
 
 There are 12 different experiments, 6 LSTM sizes v.s. with&without Hilbert rearrangement. 
-They demonstrate conclusively that, at least in a limited design, Hilbert rearrangement causes a major improvement.
+They demonstrate conclusively that Hilbert rearrangement can cause a major improvement. 
 
-The following charts are stripped down to just val_loss, val_accuracy and test_accuracy. 
+For readability, the following charts are stripped down to just val_loss, val_accuracy and test_accuracy. 
 
+The tests were run with LSTM sizes of 1, 2, 4, 8, 16 and 32 units in the encoder & decoder LSTMs. These models are quite unstable, and at this size do not function very well even with the Hilbert rearrangement.
+
+![1,2,4](images/lstm_mse_final_1_2_4.png)
+
+Moving up to 8 units, and especially 16 units, seems to work best for this test. 
+
+![8,16,32](images/lstm_mse_final_8_16_32.png)
+
+For all 6 sizes, we can see that feeding the pixels to the LSTM in Hilbert space-filling curve order gives a more effective model that using the linear matrix order.
+
+Based on the encouraging results from this obviously limited test, we will do further research.
 
 [colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Scurve_MNIST_Demo.ipynb)
 

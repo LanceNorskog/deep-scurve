@@ -18,7 +18,7 @@ Illustrate how sequences of cells in a matrix become square and irregular cluste
 
 Simple deep learning experiment demonstrating how Hilbert rearrangement can assist in doing image processing.
 
-[writeup](docs/simple_deep_learning.md)
+[writeup](simple_deep_learning.md)
 
 Open Colab link to see images or the Keras code.
 
