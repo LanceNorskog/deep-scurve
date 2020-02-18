@@ -2,13 +2,13 @@ A core part of this project is to illustrate how the Hilbert space-filling path 
 
 ![hilbert animation](images/walking_hilbert.gif)
 
-This link gives you the same animation with the centroid of each frame.
+Here is the same animation with the centroid of each cluster.
 
-![hilbert animation with centroids](images/walking_hilbert_centroids.gif)
+[hilbert animation with centroids](images/walking_hilbert_centroids.gif)
 
 It can be a little confusing to track the Hilbert side. This link gives you the same animation with a curved path for the centroid of each frame, and previous frames in the animation are ghosted in.
 
-![hilbert animation with centroids and ghosts](images/walking_hilbert_centroids_ghost.gif)
+[hilbert animation with centroids and ghosts](images/walking_hilbert_centroids_ghost.gif)
 
 These animations were generated with this code:
 
