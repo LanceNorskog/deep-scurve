@@ -12,5 +12,6 @@ It can be a little confusing to track the Hilbert side. This link gives you the 
 
 These animations were generated with this code:
 
-[Colab](colab link)
-[github](github link)
+[Colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Scurve_Animation_Small.ipynb)
+
+[github](https://github.com/LanceNorskog/deep-scurve/blob/master/notebooks/Scurve_Animation_Small.ipynb)
