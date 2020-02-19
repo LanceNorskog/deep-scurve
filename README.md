@@ -1,25 +1,26 @@
 # deep-scurve
 This repo is an investigation into doing tensor transformations using space-filling curves. 
 
-## Basic introduction
 A *space-filling curve* is a path through a grid which covers the entire grid. (These paths are called curves, but really only have right angles). The *Hilbert curve* follows this path through a 4x4 grid. 
 
-<img src="images/hilbertalgorithm.gif" width="150" />
+<img src="images/hilbertalgorithm2.png" width="150" />
 
 Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 
 ![4x4 pair](images/hilbert_intro_dual.png)
 
-This notebook walks through an explanation of how to capture neighborhoods of pixels in a way that is very friendly to deep learning. (The Colab link is better).
+## A More Detailed Introduction
 
-[colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_Introduction.ipynb)
+This notebook shows the above process in more detail, including some actual linear algebra. (The Colab link is better).
+
+[Colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_Introduction.ipynb)
 [github](notebooks/Hilbert_Mapping_Introduction.ipynb)
 
 ## Applications of Hilbert Space-Filling Curves to Image Processing
 
 Illustrate how sequences of cells in a matrix become square and irregular clusters in the rearranged matrix. Open the Colab link.
 
-[colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
+[Colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
 [github](notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
 
 Illustrate with animation of 8x8 grid, linear and Hilbert mapping as an image sampling algorithm
