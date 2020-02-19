@@ -32,6 +32,6 @@ Open Colab link to see images or the Keras code.
 [github](notebooks/Scurve_MNIST_Demo.ipynb)
 
 ## Acknowledgements
-All of the IPython notebooks were written and debugged on Google's Colab free tier. The Hilbert curve code was lifted from Aldo Cortesi's [scurve](https://github.com/cortesi/scurve) package for Python. It is only released for Python 2, so I --hacked it up-- ported it to Python 3. 
+All of the IPython notebooks were written and debugged on Google's Colab free tier. The Hilbert curve code was lifted from Aldo Cortesi's [scurve](https://github.com/cortesi/scurve) package for Python. It is only released for Python 2, so I ~~hacked it up~~ ported it to Python 3. 
 
 *(Colab: where some days are better than others ™)*
