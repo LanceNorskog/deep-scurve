@@ -3,7 +3,7 @@ This repo is an investigation into doing tensor transformations using space-fill
 
 A *space-filling curve* is a path through a grid which covers the entire grid. (These paths are called curves, but really only have right angles). The *Hilbert curve* follows this path through a 4x4 grid. 
 
-<img src="images/hilbertalgorithm2.png" width="150" />
+<img src="images/hilbert_algorithm.png" width="150" />
 
 Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 
