@@ -25,13 +25,13 @@ This notebook illustrates how sequences of cells in a matrix become square and i
 
 The following digression shows the above with some animations!
 
-[github](Hilbert_Animation.md)
+[Animations of Hilbert Shuffle](Hilbert_Animation.md)
 
-## Using Hilbert curve in simple deep learning task with MNIST digits
+## Using Hilbert curve in simple deep learning task
 
-Simple deep learning experiment demonstrating how Hilbert rearrangement can assist in doing image processing.
+Here is a simple deep learning experiment demonstrating how this can assist in doing image processing.
 
-[writeup](simple_deep_learning.md)
+[Deep Learning: using this on MNIST digits](simple_deep_learning.md)
 
 Open Colab link to see images or the Keras code.
 
