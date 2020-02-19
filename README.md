@@ -11,19 +11,19 @@ Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 
 ## A More Detailed Introduction
 
-This notebook shows the above process in more detail, including some actual linear algebra. (The Colab link is better).
+This notebook shows the above process in more detail, including some math. (The Colab link is better).
 
 [Colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_Introduction.ipynb)
 [github](notebooks/Hilbert_Mapping_Introduction.ipynb)
 
 ## Applications of Hilbert Space-Filling Curves to Image Processing
 
-Illustrate how sequences of cells in a matrix become square and irregular clusters in the rearranged matrix. Open the Colab link.
+This notebook illustrates how sequences of cells in a matrix become square and irregular clusters in the rearranged matrix. Open the Colab link.
 
 [Colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
 [github](notebooks/Hilbert_Mapping_in_Image_Processing.ipynb)
 
-Illustrate with animation of 8x8 grid, linear and Hilbert mapping as an image sampling algorithm
+The following digression shows the above with some animations!
 
 [github](Hilbert_Animation.md)
 
