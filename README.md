@@ -1,8 +1,14 @@
 # deep-scurve
-This repo is a collection of investigations into the benefits of using space-filling curves in deep learning.
+This repo is an investigation into doing tensor transformations using space-filling curves. 
 
 ## Basic introduction
-A space-filling curve is a path through a grid which covers the entire grid, and only touches each square once. There are various types of such paths. The Hilbert space-filling curve is one of a family of such paths. Unlike some paths, the Hilbert space-filling curve is self-similar (fractal) and has really interesting properties for analyzing multi-dimensional data.
+A *space-filling curve* is a path through a grid which covers the entire grid. (These paths are called curves, but really only have right angles). The *Hilbert curve* follows this path through a 4x4 grid. 
+
+<img src="images/hilbertalgorithm.gif" width="150" />
+
+Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
+
+![4x4 pair](images/hilbert_intro_dual.png)
 
 This notebook walks through an explanation of how to capture neighborhoods of pixels in a way that is very friendly to deep learning. (The Colab link is better).
 
