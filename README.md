@@ -3,7 +3,7 @@ This repo is an investigation into doing tensor transformations using space-fill
 
 A *space-filling curve* is a path through a grid which covers the entire grid. (These paths are called curves, but really only have right angles). The *Hilbert curve* follows this path through a 4x4 grid. 
 
-<img src="images/hilbertalgorithm2.png" width="150" />
+<img src="images/hilbert_algorithm.png" width="150" />
 
 Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 
@@ -25,13 +25,13 @@ This notebook illustrates how sequences of cells in a matrix become square and i
 
 The following digression shows the above with some animations!
 
-[github](Hilbert_Animation.md)
+[Animations of Hilbert Shuffle](Hilbert_Animation.md)
 
-## Using Hilbert curve in simple deep learning task with MNIST digits
+## Using Hilbert curve in simple deep learning task
 
-Simple deep learning experiment demonstrating how Hilbert rearrangement can assist in doing image processing.
+Here is a simple deep learning experiment demonstrating how this can assist in doing image processing.
 
-[writeup](simple_deep_learning.md)
+[Deep Learning: using this on MNIST digits](simple_deep_learning.md)
 
 Open Colab link to see images or the Keras code.
 
