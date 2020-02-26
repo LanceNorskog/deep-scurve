@@ -20,7 +20,7 @@ class ZOrder:
             size: total number of points in the curve.
         """
         x = math.log(size, 2)
-        bits = x/dimension
+        bits = x//dimension
         if not bits == int(bits):
             raise ValueError("Size does not fit a square ZOrder curve.")
         return ZOrder(dimension, int(bits))
@@ -44,7 +44,7 @@ class ZOrder:
         idx = 0
         iwidth = self.bits * self.dimension
         for i in range(iwidth):
-            bitoff = self.bits-(i/self.dimension)-1
+            bitoff = self.bits-(i//self.dimension)-1
             poff = self.dimension-(i%self.dimension)-1
             b = utils.bitrange(p[poff], self.bits, bitoff, bitoff+1) << i
             idx |= b
@@ -54,7 +54,7 @@ class ZOrder:
         p = [0]*self.dimension
         iwidth = self.bits * self.dimension
         for i in range(iwidth):
-            b = utils.bitrange(idx, iwidth, i, i+1) << (iwidth-i-1)/self.dimension
+            b = utils.bitrange(idx, iwidth, i, i+1) << (iwidth-i-1)//self.dimension
             p[i%self.dimension] |= b
         p.reverse()
         return p
