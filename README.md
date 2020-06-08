@@ -49,6 +49,6 @@ and, a few projects in deep learning which fabricate a matrix or tensor using th
 This is the only use that I can find via a quick search of the literature. There don't seem to be any applications of space-filling curves to actual images or tensor data (image sequences, geology data). 
 
 ## Acknowledgements
-All of the IPython notebooks were written and debugged on Google's Colab free tier. The Hilbert curve code was lifted from Aldo Cortesi's [scurve](https://github.com/cortesi/scurve) package for Python. It is only released for Python 2, so I ~~hacked it up~~ ported it to Python 3. 
+All of the IPython notebooks were written and debugged on Google's Colab free tier.
 
 *(Colab: where some days are better than others ™)*
