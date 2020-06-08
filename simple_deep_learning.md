@@ -12,7 +12,7 @@ The autoencoder takes the set of digits and:
 
 ## Training charts
 
-The training is done with three image sets: training, validation, and test. Training checks against the validation set after each epoch. The model is chosen from the lowest level of validation loss (not accuracy!). Training stops if, after 15 epochs, validation loss does not continue to decrease. (The nadir of validation loss is generally accepted as the crossover point between under- and over-training.) After training finishes, we evaluate the model on the second hold-out 'test' data. We save and graph the loss, accuracy, validation loss, validation accuracy, test loss and test accuracy here.
+The training is done with three image sets: training, validation, and test. Training checks against the validation set after each epoch. The model is chosen from the lowest level of validation loss (not accuracy!). Training stops if, after 15 epochs, validation loss does not continue to decrease. (The nadir of validation loss is generally accepted as a crossover point between under- and over-training.) After training finishes, we evaluate the model on the second hold-out 'test' data. We save and graph the loss, accuracy, validation loss, validation accuracy, test loss and test accuracy here.
 
 ![detailed training](images/lstm_mse_final_2_flyback_extra.png)
 
@@ -23,11 +23,11 @@ In a good model, this delta should be very small- the validation accuracy and te
 ## Experiments
 
 There are 12 different experiments, 6 LSTM sizes v.s. with&without Hilbert rearrangement. 
-They demonstrate conclusively that Hilbert rearrangement can cause a major improvement. 
+They demonstrate conclusively that feeding linear data with Hilbert rearrangement can give a major improvement. 
 
 For readability, the following charts are stripped down to just val_loss, val_accuracy and test_accuracy. 
 
-The tests were run with LSTM sizes of 1, 2, 4, 8, 16 and 32 units in the encoder & decoder LSTMs. This number is called the _receptive field_ of the LSTM model. These models are quite unstable, and at this size do not function very well even with the Hilbert rearrangement.
+The tests were run with LSTM sizes of 1, 2, 4, 8, 16 and 32 units in the encoder & decoder LSTMs. This number is called the _receptive field_ of the LSTM model. These models are quite unstable, and at these sizes do not train very well even with the Hilbert rearrangement. 
 
 ![1,2,4](images/lstm_mse_final_1_2_4.png)
 
@@ -35,7 +35,7 @@ Moving up to 8 units, and especially 16 units, seems to work best for this test.
 
 ![8,16,32](images/lstm_mse_final_8_16_32.png)
 
-For all 6 sizes, we can see that feeding the pixels to the LSTM in Hilbert space-filling curve order gives a more effective model that using the linear matrix order. 
+For all 6 sizes, we can see that feeding the pixels to the LSTM in Hilbert space-filling curve order gives a more effective model that using the linear matrix order. All six sizes achieve a better minimum validation loss when using the Hilbert rearrangement.
 
 ## Digits
 Let's look at the output of the autoencoder for different sizes of receptive field. First, the actual digits:
@@ -83,7 +83,9 @@ This time we're going to alternate the linear mode and Hilbert mode. For the siz
 So, even though the receptive field should be 16 or 32 to create a solid, reliably trainable network, the smaller sizes show how the LSTM tools build a very effective view of local data.
 
 ## Conclusion
-Based on the encouraging results from this obviously limited test, we will do further research.
+Running the two variations of this design at "too small" sizes is very illuminating about their inner workings and behaviors. Based on the encouraging results from this obviously limited test, we will do further research. 
+
+If you wish to see the code used to run these, or if you wish to crib the code for the "train/test/val" charts above, you can run the notebook:
 
 [colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Scurve_MNIST_Demo.ipynb)
 
