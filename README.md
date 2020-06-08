@@ -33,11 +33,6 @@ Here is a simple deep learning experiment demonstrating how this can assist in d
 
 [Deep Learning: using this on MNIST digits](simple_deep_learning.md)
 
-Open Colab link to see images or the Keras code.
-
-[colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Scurve_MNIST_Demo.ipynb)
-[github](notebooks/Scurve_MNIST_Demo.ipynb)
-
 ## Other uses of the Hilbert space-filling curve in deep learning
 
 In DNA analysis, DNA data is linear but combinations of nearby elements are very important. This paper shows how DNA data is visualized via Hilbert space-filling curves:
