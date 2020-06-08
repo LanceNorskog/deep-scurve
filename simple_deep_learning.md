@@ -1,4 +1,4 @@
-This Colab notebook runs experiments in training an autoencoder (written in Keras/Tensorflow) to regenerate MNIST digits. 
+This Colab notebook runs experiments in training an autoencoder (written in Keras/Tensorflow) to regenerate MNIST digits using both linear matrix and Hilbert space-filling curves to feed a pair of LSTM nodes. 
 
 ## Model
 
