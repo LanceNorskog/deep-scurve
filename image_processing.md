@@ -1,5 +1,38 @@
 # Applications of Hilbert Space-Filling Curves to Image Processing
 
+In a previous notebook, we demonstrated the concept of rearranging a matrix along the Hilbert Space-Filling Curve. In this notebook we will explain how to apply this operation to image processing. We will show how the self-similarity property of the Hilbert curve gives a very useful approach to sampling sections of an image, in particular to the way image processing works in deep learning.
+
+Note that there are many space-filling curves. Empirical research has shown that the Hilbert curve is the best for our purposes.
+
+## Hilbert space-filling curves as a matrix function
+
+The following grids show how cells are numbered in a Hilbert path through an 8x8 grid. The left grid shows the conventional computer memory-based addressing. The right grid shows the path through the grid in cell order.
+
+(These examples use an 8x8 grid to more completely display the interesting properties of neighborhood clusters in this technique.)
+
+("Flyback" here refers to the distance between cells in memory. It is named for the "flyback transformer" found in cathode ray tubes. For more on this, try out this wonderful tutorial.)
+
+![](images/hilbert_explainer_A_1.png)
+
+The Hilbert space-filling curve can be used as a function on a 2D matrix, which maps its cells to a new 2D matrix. This notebook illustrates this concept, and shows why it creates a useful method of sub-sampling neighborhoods in an image.
+
+The following shows how sequences of cells in Flyback order are naturally clustered when mapped to Hilbert order. First, row-sized sequences and then somewhat randomized runs.
+
+![](images/hilbert_explainer_A_2.png)
+
+![](images/hilbert_explainer_A_3.png)
+
+![](images/hilbert_explainer_A_4.png)
+
+
+These sequences can be any range of cells in the matrix. That is, we can sample a row of cells which are not aligned to a power of 2.
+
+![](images/hilbert_explainer_A_5.png)
+
+Obviously, these data subsets are not probabilistic samples- no coins were tossed, no dice were thrown. However, copying cells from the Flyback sequence to the corresponding Hilbert cluster is a form of sampling that looks suspiciously like probabilistic sampling.
+
+![](images/hilbert_explainer_A_6.png)
+
 ## Euclidean Distances of Flyback and Hilbert Matrices
 These are heatmaps of the Euclidean difference between all pairs of cells in the Flyback-ordered and Hilbert-ordered matrices, along the Flyback and Hilbert paths. On the left, Euclidean distances for the conventionally numbered matrix. On the right, the Euclidean distance between all pairs following the sequence of the space-filling curve. That is, on the left are the Euclidean distances for standard row order, and on the right are the Euclidean distances between two cells on the Hilbert path.
 ![](images/hilbert_explainer_B_1.png)
