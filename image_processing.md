@@ -10,7 +10,7 @@ The following grids show how cells are numbered in a Hilbert path through an 8x8
 
 (These examples use an 8x8 grid to more completely display the interesting properties of neighborhood clusters in this technique.)
 
-("Flyback" here refers to the distance between cells in memory. It is named for the "flyback transformer" found in cathode ray tubes. For more on this, try out this wonderful tutorial.)
+("Flyback" here refers to the distance between cells in memory. It is named for the "flyback transformer" found in cathode ray tubes. For more on this, [try out this wonderful tutorial](https://nationalmaglab.org/education/magnet-academy/watch-play/interactive/electromagnetic-deflection-in-a-cathode-ray-tube-ii).)
 
 ![](images/hilbert_explainer_A_1.png)
 
@@ -34,7 +34,7 @@ Obviously, these data subsets are not probabilistic samples- no coins were tos
 ![](images/hilbert_explainer_A_6.png)
 
 ## Euclidean Distances of Flyback and Hilbert Matrices
-These are heatmaps of the Euclidean difference between all pairs of cells in the Flyback-ordered and Hilbert-ordered matrices, along the Flyback and Hilbert paths. On the left, Euclidean distances for the conventionally numbered matrix. On the right, the Euclidean distance between all pairs following the sequence of the space-filling curve. That is, on the left are the Euclidean distances for standard row order, and on the right are the Euclidean distances between two cells on the Hilbert path.
+These are [heatmaps](https://seaborn.pydata.org/examples/heatmap_annotation.html) of the Euclidean difference between all pairs of cells in the Flyback-ordered and Hilbert-ordered matrices, along the Flyback and Hilbert paths. On the left, Euclidean distances for the conventionally numbered matrix. On the right, the Euclidean distance between all pairs following the sequence of the space-filling curve. That is, on the left are the Euclidean distances for standard row order, and on the right are the Euclidean distances between two cells on the Hilbert path.
 ![](images/hilbert_explainer_B_1.png)
 
 From the above right, we can see that the distance along the Hilbert path is (somewhat) correlated with the Euclidean distance between two points.
