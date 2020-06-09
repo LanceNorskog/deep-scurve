@@ -35,7 +35,7 @@ Here is a simple deep learning experiment demonstrating how this can assist in d
 
 ## Other uses of the Hilbert space-filling curve in deep learning
 
-In DNA analysis, DNA data is linear but combinations of nearby elements are very important. This paper shows how DNA data is visualized via Hilbert space-filling curves:
+In DNA analysis, DNA data is linear but overlapping combinations of nearby elements are very important. This paper shows how DNA data is visualized via Hilbert space-filling curves:
 
 [Visualization of genomic data with the Hilbert curve](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2677744/)
 
