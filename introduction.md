@@ -1,4 +1,4 @@
-# Hilbert Space-Filling Curves
+# Introduction to Matrix Transformations with the Hilbert Space-Filling Curve
 
 A space-filling curve is a path through a grid which covers the entire grid, and only touches each square once. There are various types of such paths. The Hilbert space-filling curve is one of a family of such paths. Unlike some space-filling curves, the Hilbert curve is self-similar (fractal).
 
