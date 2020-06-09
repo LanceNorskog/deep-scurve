@@ -4,7 +4,7 @@ In a previous notebook, we demonstrated the concept of rearranging a matrix alon
 
 Note that there are many space-filling curves. Empirical research has shown that the Hilbert curve is the best for our purposes. (See Appendix for links to research on this.)
 
-## Hilbert space-filling curves as a matrix function
+## Hilbert Space-Filling Curves as a Matrix Function
 
 The following grids show how cells are numbered in a Hilbert path through an 8x8 grid. The left grid shows the conventional computer memory-based addressing. The right grid shows the path through the grid in cell order.
 
