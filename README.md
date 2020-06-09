@@ -14,7 +14,7 @@ Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 This shuffling operation is called a _function on a matrix_. It can be done on any matrix whose size is a power of 2.
 This link shows the above shuffling process in more detail, including some math. 
 
-[Introduction](introduction.md)
+[Introduction to Matrix Transformations with the Hilbert Space-Filling Curve](introduction.md)
 
 ## Applications of Hilbert Space-Filling Curves to Image Processing
 
