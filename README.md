@@ -1,7 +1,9 @@
 # deep-scurve
 This repo is an investigation into doing tensor transformations using space-filling curves. 
 
-A *space-filling curve* is a fully connected path through a grid which covers the entire grid and visits each cell only once. There are several kinds of space-filling curve (these paths are called curves, but really only have right angles). In this project we use the curve invented by David Hilbert. The *Hilbert curve* follows this path through a 4x4 grid. 
+A *space-filling curve* is a fully connected path through a grid which covers the entire grid and visits each cell only once. There are several kinds of space-filling curve (these paths are called curves, but really only have right angles). In this project we use the curve invented by David Hilbert. Roughly, the Hilbert curve is created by process akin to making folded paper snowmen: fold a square surface twice into a smaller square, inscribe through all layers a cut to the edge, then unfold the surface. 
+
+The *Hilbert curve* follows this path through a 4x4 grid. 
 
 <img src="images/hilbert_algorithm.png" width="150" />
 
@@ -11,10 +13,9 @@ Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 
 ## A More Detailed Introduction
 
-Roughly, the Hilbert curve is created by folding a square surface twice into a smaller square, inscribing a right-angle path across it, then unfolding the surface. This notebook shows the above process in more detail, including some math. (The Colab link is better).
+This notebook shows the above shuffling process in more detail, including some math. 
 
-[Colab](https://colab.research.google.com/github/LanceNorskog/deep-scurve/blob/master/notebooks/Hilbert_Mapping_Introduction.ipynb)
-[github](notebooks/Hilbert_Mapping_Introduction.ipynb)
+[Introduction](introduction.md)
 
 ## Applications of Hilbert Space-Filling Curves to Image Processing
 
