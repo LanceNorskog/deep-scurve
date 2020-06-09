@@ -1,5 +1,5 @@
 # deep-scurve
-This repo is an investigation into doing tensor transformations using space-filling curves. 
+This repo is an investigation into doing matrix transformations using space-filling curves. 
 
 A *space-filling curve* is a fully connected path through a grid which covers the entire grid and visits each cell only once. There are several kinds of space-filling curve (these paths are called curves, but really only have right angles). In this project we use the curve invented by David Hilbert. Roughly, the Hilbert curve is created by process akin to making folded paper snowmen: fold a square surface twice into a smaller square, inscribe through all layers a cut to the edge, then unfold the surface. 
 
@@ -11,9 +11,8 @@ Here is a simple 4x4 grid with the cells shuffled via this Hilbert curve.
 
 ![4x4 pair](images/hilbert_intro_dual.png)
 
-## A More Detailed Introduction
-
-This notebook shows the above shuffling process in more detail, including some math. 
+This shuffling operation is called a _function on a matrix_. It can be done on any matrix whose size is a power of 2.
+This link shows the above shuffling process in more detail, including some math. 
 
 [Introduction](introduction.md)
 
