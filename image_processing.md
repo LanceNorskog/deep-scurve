@@ -2,7 +2,7 @@
 
 In a previous notebook, we demonstrated the concept of rearranging a matrix along the Hilbert Space-Filling Curve. In this notebook we will explain how to apply this operation to image processing. We will show how the self-similarity property of the Hilbert curve gives a very useful approach to sampling sections of an image, in particular to the way image processing works in deep learning.
 
-Note that there are many space-filling curves. Empirical research has shown that the Hilbert curve is the best for our purposes.
+Note that there are many space-filling curves. Empirical research has shown that the Hilbert curve is the best for our purposes. (See Appendix for links to research on this.)
 
 ## Hilbert space-filling curves as a matrix function
 
