@@ -1,5 +1,5 @@
 # deep-scurve
-This repo is an investigation into doing matrix transformations using space-filling curves. 
+This repo is an investigation into applying matrix transformations using space-filling curves to an outstanding problem in Deep Learning: representing data which by nature is between linear and 2-D. Examples of this data are DNA and sensor data streams, where samples are strongly correlated by nearness.
 
 A *space-filling curve* is a fully connected path through a grid which covers the entire grid and visits each cell only once. There are several kinds of space-filling curve (these paths are called curves, but really only have right angles). In this project we use the curve invented by David Hilbert. Roughly, the Hilbert curve is created by process a akin to making folded paper snowmen: fold a square surface twice into a smaller square, inscribe through all layers a cut to the edge, then unfold the surface. 
 
