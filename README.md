@@ -1,7 +1,7 @@
 # deep-scurve
 This repo is an investigation into doing matrix transformations using space-filling curves. 
 
-A *space-filling curve* is a fully connected path through a grid which covers the entire grid and visits each cell only once. There are several kinds of space-filling curve (these paths are called curves, but really only have right angles). In this project we use the curve invented by David Hilbert. Roughly, the Hilbert curve is created by process akin to making folded paper snowmen: fold a square surface twice into a smaller square, inscribe through all layers a cut to the edge, then unfold the surface. 
+A *space-filling curve* is a fully connected path through a grid which covers the entire grid and visits each cell only once. There are several kinds of space-filling curve (these paths are called curves, but really only have right angles). In this project we use the curve invented by David Hilbert. Roughly, the Hilbert curve is created by process a akin to making folded paper snowmen: fold a square surface twice into a smaller square, inscribe through all layers a cut to the edge, then unfold the surface. 
 
 The *Hilbert curve* follows this path through a 4x4 grid. 
 
